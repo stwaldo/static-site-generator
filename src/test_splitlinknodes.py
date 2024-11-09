@@ -2,7 +2,7 @@ import unittest
 from nodeconverter import TextType
 from splitlinknodes import split_nodes_links
 from splitlinknodes import split_nodes_images
-from textnode import TextNode
+from node_types.textnode import TextNode
 
 class TestSplitLinkNodes(unittest.TestCase):
         

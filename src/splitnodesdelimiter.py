@@ -1,4 +1,4 @@
-from textnode import TextNode
+from node_types.textnode import TextNode
 from nodeconverter import TextType
 
 # takes a list of old nodes, a delimiter, and a text type

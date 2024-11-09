@@ -2,7 +2,7 @@ import re
 from linkextractor import extract_markdown_links
 from linkextractor import extract_markdown_images
 from nodeconverter import TextType
-from textnode import TextNode
+from node_types.textnode import TextNode
 
 def split_nodes_images(old_nodes):
     # accepts a list of TextNodes, and for each node returns a list of TextNodes with any image links split into separate nodes

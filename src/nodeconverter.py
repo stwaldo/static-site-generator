@@ -1,6 +1,6 @@
 from enum import Enum
 
-from leafnode import LeafNode
+from node_types.leafnode import LeafNode
 
 class TextType(Enum):
     TEXT = "text"
