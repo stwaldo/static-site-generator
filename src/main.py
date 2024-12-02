@@ -1,10 +1,10 @@
 import shutil
-from generatepage import generate_page
+from generatepage import generate_pages_recursive
 from node_types.textnode import TextNode
 
 def main():
     copy_static_to_public()
-    generate_page('content/index.md', 'template.html', 'public/index.html')
+    generate_pages_recursive('content', 'template.html', 'public')
     
 def copy_static_to_public():
     # Delete contents of the `public` folder
