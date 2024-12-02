@@ -6,7 +6,7 @@ class HTMLNode():
     def __init__(self, tag=None, value=None, children=None, props=None):
         self.tag = tag
         self.value = value
-        self.children = children
+        self.children = children if children is not None else []
         self.props = props
 
     def to_html(self):
@@ -19,6 +19,9 @@ class HTMLNode():
                 props += f' {key}="{value}"'
         return props
     
+    def add_child(self, child):
+        self.children.append(child)
+    
     def __repr__(self):
         return f"HTMLNode({self.tag}, {self.value}, {self.children}, {self.props})"
     
@@ -26,4 +29,3 @@ class HTMLNode():
         if not isinstance(other, HTMLNode):
             return False
         return self.tag == other.tag and self.value == other.value and self.props == other.props and self.children == other.children
-    
