@@ -6,7 +6,7 @@ def text_to_textnodes(text):
     # Define regex patterns for different text types
     patterns = {
         TextType.BOLD: re.compile(r"\*\*(.*?)\*\*"),
-        TextType.ITALIC: re.compile(r"(?<!\*)\*(?!\*)(.*?)\*(?!\*)"),
+        TextType.ITALIC: re.compile(r"(?<!_)_(?!_)(.*?)_(?!_)"),
         TextType.CODE: re.compile(r"`(.*?)`"),
         TextType.IMAGE: re.compile(r"!\[([^\]]+)\]\(([^)]+)\)"),
         TextType.LINK: re.compile(r"(?<!!)\[([^\[\]]*)\]\(([^\(\)]*)\)")
