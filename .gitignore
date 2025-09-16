@@ -1,6 +1,5 @@
 __pycache__/
 .vscode
-public/
 .DS_Store
 content/.DS_Store
 content/blog/.DS_Store
